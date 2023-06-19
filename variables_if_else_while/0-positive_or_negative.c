@@ -1,4 +1,4 @@
-/**
+/*
  *File: 0-positive_or_negative.c
  *Auth: Christian Rosario
 */
@@ -29,7 +29,7 @@ int main(void)
 	}
 	else
 	{
-		printf("%d is negative\n", n)
+		printf("%d is negative\n", n);
 	}
 	return (0);
 }
