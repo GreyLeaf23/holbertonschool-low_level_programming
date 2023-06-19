@@ -8,11 +8,14 @@
 #include <stdio.h>
 
 /**
- * main - Prints arandom number and states whether it is positive, negative, or zero.
+ * main - Prints arandom number and states whether
+ *        it is positive, negative, or zero.
  *
  * Return: Always 0 (Success)
  */
+
 int main(void)
+
 {
 	int n;
 
