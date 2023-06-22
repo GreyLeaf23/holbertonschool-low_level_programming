@@ -14,8 +14,10 @@ int main(void)
 
 	for (i = 0; i < 16; i++)
 	{
-		putchar('0' + i);
-		if(i == 9)
+		putchar((i % 10) + '0');
+		if (i == 9)
+			continue;
+
 
 		putchar(',');
 		putchar(' ');
