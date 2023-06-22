@@ -13,9 +13,9 @@ int main(void)
 	int i;
 
 	for (i = 0; i < 16; i++)
-		if(i == 9)
+		if (i == 9)
 	{
-		putchar('0' + i);
+		putchar((num % 10) + '0');
 		putchar(',');
 		putchar(' ');
 	}
