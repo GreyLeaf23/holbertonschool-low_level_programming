@@ -15,6 +15,7 @@ int main(void)
 	for (i = 0; i <= 16; i++)
 	{
 		putchar('0' + i);
+		putchar(',');
 	}
 
 	putchar('\n');
