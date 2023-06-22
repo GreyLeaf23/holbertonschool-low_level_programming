@@ -14,7 +14,7 @@ int main(void)
 
 	for (i = 0; i <= 16; i++)
 	{
-		putchar('i < 16');
+		putchar('0' + i);
 	}
 
 	putchar('\n');
