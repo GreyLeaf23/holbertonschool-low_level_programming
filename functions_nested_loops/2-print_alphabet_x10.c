@@ -2,6 +2,8 @@
 
 /**
  * print_alphabet_x10 - Prints the alphabet times 10.
+ *
+ * Return: Always 0
  */
 
 void print_alphabet_x10(void)
@@ -15,14 +17,17 @@ void print_alphabet_x10(void)
 
 	{
 
-	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+	for (alphabet = 0; alphabet < 26; alphabet++)
 
 	{
 
-		_putchar(alphabet);
+		_putchar("%c", 'a' + alphabet);
+
 	}
 
 _putchar('\n');
+
+ return (0);
 
 	}
 }
