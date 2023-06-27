@@ -7,14 +7,10 @@
  * Return: Always 0
  */
 
-int main(void)
+void reset_to_98(int *n);
 {
-	int n = 32;
-	int *p = &n;
 
-	*p = 98;
-
-	_putchar(n);
+	*n = 98;
 
 return (0);
 
