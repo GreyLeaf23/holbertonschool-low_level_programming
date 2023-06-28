@@ -4,6 +4,7 @@
  * int _islower(int c) - Function that checks for lowercase character.
  *
  * main - Entry Point
+ * @c: Lowercase character
  * Return: Always 0
  */
 
