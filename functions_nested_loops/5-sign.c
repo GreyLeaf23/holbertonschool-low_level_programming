@@ -12,20 +12,22 @@ int print_sign(int n)
 
 	if (n > 0)
 	{
-		print_sign("+\n");
+		putchar('+');
 		return (1);
 	}
 
 	else if (n == 0)
 	{
-		print_sign("0\n");
+		putchar('0');
 		return (0);
 	}
 
 	else
 	{
-		print_sign("-\n");
+		putchar('-');
 		return (-1);
 	}
 
+	putchar('\n')
+	return (0);
 }
