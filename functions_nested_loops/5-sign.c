@@ -12,19 +12,19 @@ int print_sign(int n)
 
 	if (n > 0)
 	{
-		putchar("+\n");
+		print_sign("+\n");
 		return (1);
 	}
 
 	else if (n == 0)
 	{
-		putchar("0\n");
+		print_sign("0\n");
 		return (0);
 	}
 
 	else
 	{
-		putchar("-\n");
+		print_sign("-\n");
 		return (-1);
 	}
 
