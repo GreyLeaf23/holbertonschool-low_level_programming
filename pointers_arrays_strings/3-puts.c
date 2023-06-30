@@ -7,6 +7,8 @@
 
 void _puts(char *str)
 {
+	char a;
+
 	while (*str != '\0')
 	{
 		_putchar(*str[a]);
