@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * strd - Points to a new allocated space in memory.
+ * _strdup - Points to a new allocated space in memory.
  * @str: Assigned string.
  *
  * Return: NULL if the str fails.
@@ -25,6 +25,8 @@ char *_strdup(char *str)
 	}
 
 	duplicate = malloc(sizeof(char) * (i + 1));
+
+	char *_strdup(const char *duplicate);
 
 	if (duplicate == 0)
 	{
