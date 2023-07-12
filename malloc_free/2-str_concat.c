@@ -18,12 +18,12 @@ char *p; /*Newly allocated pointer.*/
 
 	if (s1 == NULL)
 	{
-		s1 = '';
+		s1 = "";
 	}
 
 	if (s2 == NULL)
 	{
-		s2 = '';
+		s2 = "";
 	}
 
 p = malloc(strlen(s1) + strlen(s2) + 1); /*Memory space made for 'for loops'*/
@@ -33,12 +33,12 @@ p = malloc(strlen(s1) + strlen(s2) + 1); /*Memory space made for 'for loops'*/
 		return (NULL);
 	}
 
-	for (i = 0; s1 = [i] != '\0', i++)
+	for (i = 0; s1[i] != '\0'; i++) /*Function that connects both strings*/
 	{
 		p[i] = s1[i];
 	}
 
-	for (j = 0; s2 = [j]; j++)
+	for (j = 0; s2[j] != '\0'; j++)
 	{
 		p[i++] = s2 [j];
 	}
