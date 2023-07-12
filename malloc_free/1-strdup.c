@@ -11,23 +11,33 @@
 
 char *_strdup(char *str)
 {
-	char *aaa;
-	int i, r = 0;
+	char *duplicate;
+	int i, r;
 
-	if (str == NULL)
+	if (str == 0)
+	{
 		return (NULL);
-	i = 0;
-	while (str[i] != '\0')
-		i++;
+	}
 
-	aaa = malloc(sizeof(char) * (i + 1));
+	for (i = 0; str[i] != '\0'; i++)
+	{
 
-	if (aaa == NULL)
+	}
+
+	duplicate = malloc(sizeof(char) * (i + 1));
+
+	if (duplicate == 0)
+	{
 		return (NULL);
+	}
 
 	for (r = 0; str[r]; r++)
-		aaa[r] = str[r];
+	{
+		duplicate[r] = str[r];
+	}
 
-	return (aaa);
+	free(duplicate);
+
+	return (duplicate);
 }
 
