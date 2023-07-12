@@ -12,7 +12,7 @@
 
 char *str_concat(char *s1, char *s2)
 {
-int i, j; /*Variables that represent the parameters on top.*/
+int i = 0, j = 0; /*Variables that represent the parameters on top.*/
 
 char *p; /*Newly allocated pointer.*/
 
@@ -43,6 +43,6 @@ p = malloc(strlen(s1) + strlen(s2) + 1); /*Memory space made for 'for loops'*/
 		p[i++] = s2[j];
 	}
 
-	return (NULL);
+	return (p);
 
 }
