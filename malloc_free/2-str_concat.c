@@ -40,7 +40,7 @@ p = malloc(strlen(s1) + strlen(s2) + 1); /*Memory space made for 'for loops'*/
 
 	for (j = 0; s2[j] != '\0'; j++)
 	{
-		p[i++] = s2 [j];
+		p[i++] = s2[j];
 	}
 
 	return (NULL);
