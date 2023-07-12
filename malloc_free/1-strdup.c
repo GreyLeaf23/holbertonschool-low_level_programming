@@ -11,11 +11,7 @@
 
 char *_strdup(char *str)
 {
-<<<<<<< HEAD:malloc_free/1-strdup.c~
-	//String to inspect.
-=======
 	/*String to inspect.*/
->>>>>>> 03c88f094f150637f42d2ce70960df9383edd8fd:malloc_free/1-strdup.c
 	char *aaa;
 	int i, r;
 
@@ -24,11 +20,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-<<<<<<< HEAD:malloc_free/1-strdup.c~
-	//While loop to inspect.
-=======
 	/*While loop to inspect.*/
->>>>>>> 03c88f094f150637f42d2ce70960df9383edd8fd:malloc_free/1-strdup.c
 	i = 0;
 	while (str[i] != '\0')
 	{
@@ -48,9 +40,5 @@ char *_strdup(char *str)
 		aaa[r] = str[r];
 	}
 
-<<<<<<< HEAD:malloc_free/1-strdup.c~
-	return (duplicate);
-=======
 	return (aaa);
->>>>>>> 03c88f094f150637f42d2ce70960df9383edd8fd:malloc_free/1-strdup.c
 }
