@@ -6,12 +6,13 @@
  * _strdup - Points to a new allocated space in memory.
  * @str: Assigned string.
  *
- * Return: NULL if the str fails.
+ * Return: Always 0.
  */
 
 char *_strdup(char *str)
 {
-	char *duplicate;
+	/*String to inspect.*/
+	char *aaa;
 	int i, r;
 
 	if (str == NULL)
@@ -19,26 +20,25 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
+	/*While loop to inspect.*/
 	i = 0;
 	while (str[i] != '\0')
 	{
 		i++;
 	}
 
-	duplicate = malloc(sizeof(char) * (i + 1));
+	aaa = malloc(sizeof(char) * (i + 1));
 
 
-	if (duplicate == NULL)
+	if (aaa == NULL)
 	{
 		return (NULL);
 	}
 
 	for (r = 0; str[r]; r++)
 	{
-		duplicate[r] = str[r];
+		aaa[r] = str[r];
 	}
 
-	free(duplicate);
-
-	return (duplicate);
+	return (aaa);
 }
