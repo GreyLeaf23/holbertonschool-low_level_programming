@@ -5,7 +5,7 @@
  * print_dog - output the values of the structure's variables.
  * @d: points to the variables in the struct.
  *
- * Return: 0
+ * Return: pointer.
  */
 
 void print_dog(struct dog *d)
