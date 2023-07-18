@@ -6,6 +6,7 @@
  * new_dog - represents the structure 'dog_t'.
  * @name: string to store.
  * @owner: string to store.
+ * @age: float input.
  *
  * Return: new_dog struct.
  */
