@@ -1,5 +1,5 @@
 #include "dog.h"
-#include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 
 /**
@@ -17,14 +17,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 	/*Make space for struct*/
 	new_dog = malloc(sizeof(dog_t));
 	if (new_dog == NULL)
-		return;
+		return (NULL);
 
 	/*Make space for the lenght of name.*/
 	new_dog->name = malloc(sizeof(char) * strlen(name) + 1);
 	if (new_dog->name == NULL)
 	{
 		free(new_dog);
-		return;
+		return (NULL);
 	}
 
 	/*Make space for the length of owner.*/
@@ -33,7 +33,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 		free(new_dog->name); /*Free space of previously-made functions.*/
 		free(new_dog);
-		return;
+		return (NULL);
 	}
 
 	/*Make duplication of 'name' and 'owner'*/
