@@ -21,9 +21,9 @@ int int_index(int *array, int size, int (*cmp)(int))
 			return (-1);
 		}
 
-			for (woof = 0; woof < size; woof++)
+			for (woof = 0; woof < size; woof++) /*Define 'woof'*/
 			{
-				if ((*cmp)(array[woof]) != 0)
+				if ((*cmp)(array[woof]) != 0) /*Check 'function pointer'.*/
 					return (woof);
 			}
 	}
