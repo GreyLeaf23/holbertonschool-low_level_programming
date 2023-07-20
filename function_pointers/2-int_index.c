@@ -13,7 +13,7 @@
 int int_index(int *array, int size, int (*cmp)(int))
 {
 	int woof; /*'size' variable*/
-	
+
 	if (array != NULL && cmp != NULL) /*Check 'array' and 'cmp'*/
 	{
 		if (size <= 0) /*Check 'size'*/
@@ -22,8 +22,8 @@ int int_index(int *array, int size, int (*cmp)(int))
 
 			for (woof = 0; woof < size; woof++)
 			{
-				if ((*cmp)(array[woof]) != 0);
-					return (1);
+				if (cmp(array[woof]) != 0)
+					return (woof);
 			}
 		}
 	}
