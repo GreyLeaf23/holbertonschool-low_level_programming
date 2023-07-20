@@ -19,13 +19,13 @@ int int_index(int *array, int size, int (*cmp)(int))
 		if (size <= 0) /*Check 'size'*/
 		{
 			return (-1);
+		}
 
 			for (woof = 0; woof < size; woof++)
 			{
 				if ((*cmp)(array[woof]) != 0)
 					return (woof);
 			}
-		}
 	}
 
 return (-1);
