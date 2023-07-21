@@ -1,17 +1,13 @@
 #include "3-calc.h"
-#include <stdio.h>
-#include <stdlib.h>
-
 /**
- * get_op_func - get arithmetic operators.
- * @s: operator.
+ * get_op_func - finds and points to correct function
+ * @s: the operator string
  *
- * Return: NULL.
+ * Return: 0 or NULL
  */
-
 int (*get_op_func(char *s))(int, int)
 {
-	op_t ops[] = { /*Inspect*/
+	op_t ops[] = {
 		{"+", op_add},
 		{"-", op_sub},
 		{"*", op_mul},
@@ -19,19 +15,17 @@ int (*get_op_func(char *s))(int, int)
 		{"%", op_mod},
 		{NULL, NULL}
 	};
-
 	int i;
 
 	i = 0;
+
 	while (i < 5)
 	{
 		if (*s == ops[i].op[0])
-		{
 			return (ops[i].f);
-		}
 		i++;
 	}
-
 	printf("Error\n");
 	exit(99);
 }
+
