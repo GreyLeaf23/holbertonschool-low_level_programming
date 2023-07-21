@@ -1,10 +1,12 @@
 #ifndef calc_h
 #define calc_h
+#include <stdio.h>
+#include <stdlib.h>
+
 /**
  * struct op - structure holding variables
  * @op: pointer for operations.
  * @f: pointer for calc.
- *
  */
 
 /*Create structure with sub-name.*/
@@ -22,4 +24,4 @@ int op_div(int a, int b);
 int op_mod(int a, int b);
 int (*get_op_func(char *s))(int, int);
 
-#endif
+#endif /* _3_CAL_H_ */
