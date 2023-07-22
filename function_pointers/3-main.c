@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * main - check the code for Holberton School students.
+ * main - calculator
  * @argc: arg count
  * @argv: pointers to arguments
  * Return: Always 0.
