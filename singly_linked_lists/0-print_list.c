@@ -26,4 +26,4 @@ size_t index = 0; /*Measuring point for the list.*/
 	}
 
 return (index);
-
+}
