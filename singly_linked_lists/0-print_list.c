@@ -21,8 +21,8 @@ size_t index = 0; /*Measuring point for the list.*/
 			{
 			printf("[%u] %s\n", h->len, h->str);
 			}
-		index++;
 		h = h->next;
+		index++;
 	}
 
 return (index);
