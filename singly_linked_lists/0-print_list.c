@@ -14,13 +14,11 @@ size_t index = 0; /*Measuring point for the list.*/
 	while (h != NULL) /*Conditional.*/
 	{
 		if (h->str == NULL) /*Conditional.*/
-		{
 		printf("[0] (nil)\n");
-		}
+
 			else
-			{
 			printf("[%u] %s\n", h->len, h->str);
-			}
+
 		h = h->next;
 		index++;
 	}
