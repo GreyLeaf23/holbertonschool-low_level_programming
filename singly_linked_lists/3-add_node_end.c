@@ -24,6 +24,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	if (new_node->str == NULL)
 	return (NULL);
 
+<<<<<<< HEAD
 	new_node->next = NULL;
 
 	if (*head == NULL)
@@ -38,5 +39,9 @@ list_t *add_node_end(list_t **head, const char *str)
 	tail = tail->next;
 
 	tail->next = new_node;
+=======
+	
+
+>>>>>>> c111f726a012c625ea1abbc16631343d6da86133
 return (new_node);
 }
