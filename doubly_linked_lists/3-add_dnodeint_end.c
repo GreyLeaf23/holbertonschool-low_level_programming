@@ -12,9 +12,6 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
 dlistint_t *new_node, *tail;
 
-if (n == '\0') /*Error proof it.*/
-	return (NULL);
-
 new_node = malloc(sizeof(dlistint_t)); /*Allocate space.*/
 
 if (new_node == NULL)
