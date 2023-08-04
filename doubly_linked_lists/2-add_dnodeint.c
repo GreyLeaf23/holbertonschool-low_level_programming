@@ -25,8 +25,9 @@ new_node->next = *head; /*New node to be place in the head.*/
 new_node->prev = NULL; /*Moving back is NULL.*/
 
 if (*head != NULL)
+{
 	(*head)->prev = new_node;
-
+}
 	*head = new_node;
 return (new_node);
 }
