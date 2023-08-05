@@ -23,7 +23,7 @@ dlistint_t *move = *h;
 	move = move->next;
 		if (move == NULL)
 			return (NULL);
-	idx++;
+	idx--;
 	}
 
 	if (move->next == NULL)
