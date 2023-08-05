@@ -40,5 +40,6 @@ if (*head == NULL)
 			move->next->prev = move->prev;
 	}
 
+free(move);
 return (1);
 }
