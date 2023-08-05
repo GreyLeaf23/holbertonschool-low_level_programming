@@ -19,9 +19,10 @@ if (*head == NULL)
 
 	while (index != 0)
 	{
-	move = move->next;
 		if (move == NULL)
 			return (-1);
+
+	move = move->next;
 	index--;
 	}
 
