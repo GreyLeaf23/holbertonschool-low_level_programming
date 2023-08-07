@@ -6,7 +6,7 @@
  * Return: Always 0.
  */
 
-int main (void)
+int main(void)
 {
 	int first, second;
 
@@ -18,7 +18,7 @@ int main (void)
 			{
 				putchar('0' + first);
 				putchar('0' + second);
-				
+
 				if (first != 8 && second <= 9)
 				{
 					putchar(',');
@@ -28,5 +28,6 @@ int main (void)
 		}
 	}
 
+	putchar('\n');
 	return (0);
 }
