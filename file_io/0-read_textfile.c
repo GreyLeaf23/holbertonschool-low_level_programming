@@ -28,11 +28,13 @@ if (buffer == NULL) /*Error Proof.*/
 
 /*Reads letters in the file that are being counted.*/
 count = read(fd,  buffer, letters);
+if (count == -1)
+	return (0);
 
 /*Writes amount of 'char's being counted.*/
 prt = write(STDOUT_FILENO, buffer, count);
 
-if (prt == '\0') /*Error Proof.*/
+if (prt == -1) /*Error Proof.*/
 	return (0);
 
 free(buffer); /*Free space to contain letters.*/
