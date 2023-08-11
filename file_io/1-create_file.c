@@ -23,7 +23,7 @@ if (fd == -1)
 
 	if (text_content == NULL)
 	{
-		for (count = 0; *(text_content + count);)
+		for (count = 0; text_content[count] != '\0';)
 			count++;
 	}
 
