@@ -28,9 +28,9 @@ if (o_f == -1)
 			r_f++;
 	}
 
-	w_f = write(o_f, text_content, r_f);
-	if (w_f == -1)
-		return (-1);
+w_f = write(o_f, text_content, r_f);
+if (w_f == -1)
+	return (-1);
 
 close(o_f);
 return (1);
