@@ -29,8 +29,6 @@ if (of == -1)
 	}
 
 wf = write(of, text_content, rf);
-if (wf == '\0')
-	return (-1);
 
 close(of);
 return (1);
