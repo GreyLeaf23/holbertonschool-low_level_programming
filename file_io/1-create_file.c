@@ -22,6 +22,7 @@ if (of == -1)
 }
 
 	if (text_content == NULL)
+		text_content = "";
 	{
 		for (rf = 0; text_content[rf] != '\0';)
 			rf++;
