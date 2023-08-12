@@ -30,6 +30,9 @@ if (of == -1)
 
 wf = write(of, text_content, rf);
 
+if (wf != rf)
+	return (-1);
+
 close(of);
 return (1);
 }
